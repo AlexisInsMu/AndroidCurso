@@ -15,7 +15,7 @@ fun main() {
 	val adult = 28
 	val senior = 87
 
-	val isMonday = true
+	val isMonday = false
 
 	println("The movie ticket price for a person aged $child is  \$${ticketPrice(child, isMonday)}.")
 	println("The movie ticket price for a person aged $adult is \$${ticketPrice(adult, isMonday)}.")
@@ -23,14 +23,9 @@ fun main() {
 }
 
 fun ticketPrice(age: Int, isMonday: Boolean): Int {
-	return when(age){
+	return when(age) {
 		in 0..12 -> 15
-		in 13..60 -> {
-			if (isMonday)
-				25
-			else
-				30
-		}
+		in 13..60 -> if (isMonday) 25 else 30
 		in 60..100 -> 20
 		else -> {
 			-1
