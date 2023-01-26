@@ -31,7 +31,7 @@ fun main(){
 		//println("la posicion $position, contiene $value")
 	}
 
-	for (weekDay in weekDays){
-		println("Ahora es $weekDay")
+	for (Suscribete in weekDays){
+		println("Ahora es $Suscribete")
 	}
 }
