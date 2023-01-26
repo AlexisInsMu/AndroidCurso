@@ -1,4 +1,4 @@
-package com.alexisnovo.androidcurso
+package com.alexisnovo.androidcurso.sintaxis
 
 fun main(){
 	//inmutableList()
